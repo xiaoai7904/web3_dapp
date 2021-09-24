@@ -1,0 +1,7 @@
+*.sol linguist-language=Solidity
+
+.DS_Store
+/node_modules
+/client/node_modules
+/client/dist
+/client/src/contracts/

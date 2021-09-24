@@ -1,0 +1,64 @@
+.mall-page-containter {
+  .mall-page {
+    padding: 20px;
+    overflow: auto;
+    max-height: calc(100vh - 60px);
+  }
+  .mall-page-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: center;
+    align-content: center;
+  }
+  .mall-page-item {
+    flex-direction: column;
+    border: 1px solid #456180;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+  }
+  .mall-page-item:hover {
+    box-shadow: 0 0 20px #000;
+  }
+  .mall-page-item-des {
+    padding: 0px 10px 10px 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    .price {
+      font-size: 18px;
+      color: #ffbf36;
+    }
+    .tips {
+      font-size: 12px;
+    }
+  }
+  .open-btn {
+    width: 100%;
+    .ant-btn {
+      width: 100%;
+    }
+  }
+  .ant-spin-nested-loading {
+    min-height: calc(100vh - 60px);
+  }
+  .mall-page-main-net-tips {
+    color: #fff;
+    font-size: 18px;
+    min-height: 30vh;
+  }
+}
+
+.marketplace-mobile {
+  .mall-page-containter {
+    .ant-spin-nested-loading {
+      min-height: calc(100vh - 105px) !important;
+    }
+    .mall-page {
+      max-height: calc(100vh - 105px) !important;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="play_button" data-name="play button" width="172" height="172" viewBox="0 0 172 172">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0f1e41;
+        opacity: 0.75;
+        mix-blend-mode: multiply;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="bg_copy_3" data-name="bg copy 3" class="cls-1" d="M159.874,130.03l-1.234,29.61-30.407,1.267a85.941,85.941,0,0,1-84.466,0L13.36,159.64l-1.234-29.61a85.971,85.971,0,0,1-1.033-86.263L12.36,13.36l29.61-1.234a86,86,0,0,1,88.06,0l29.61,1.234,1.267,30.407A85.972,85.972,0,0,1,159.874,130.03Z"/>
+  <path id="Rectangle_851_copy" data-name="Rectangle 851 copy" class="cls-2" d="M150,125.119L149,149l-23.881,1a75.031,75.031,0,0,1-78.238,0L23,149l-1-23.881a75.031,75.031,0,0,1,0-78.238L23,23l23.88-1a75.031,75.031,0,0,1,78.239,0L149,23l1,23.88A75.031,75.031,0,0,1,150,125.119ZM86,25a61,61,0,1,0,61,61A61,61,0,0,0,86,25Z"/>
+  <path id="icon_playButton_copy_4" data-name="icon_playButton copy 4" class="cls-2" d="M67.476,126.985L64,123.52v-11.3h0v-0.141l37.359-27.37V83.291L77.585,65.414v12.66l5.66,5.22v1.411L67.34,95.243,64,91.913V44.481l3.476-3.466L124,82.589v2.822Z"/>
+</svg>

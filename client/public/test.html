@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>test</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <canvas id="test" width="1000" height="500"></canvas>
+    </div>
+  </body>
+  <script>
+    /*获取元素*/
+    var myCanvas = document.querySelector("#test")
+    /*获取绘图工具*/
+    var ctx = myCanvas.getContext("2d")
+    // 1. 设置网格大小
+    var girdSize = 30
+
+    // 2. 获取Canvas的width、height
+    var CanvasWidth = ctx.canvas.width
+    var CanvasHeight = ctx.canvas.height
+
+    // 3. 采用遍历的方式，绘画x轴的线条
+    var xLineTotals = 30 * 30 // 计算需要绘画的x轴条数
+  
+    for (var i = 0; i < xLineTotals; i++) {
+      ctx.beginPath() // 开启路径，设置不同的样式
+      ctx.moveTo(0, girdSize * i) // -0.5是为了解决像素模糊问题
+      ctx.lineTo(200, girdSize * i)
+      ctx.strokeStyle = "#ccc" // 设置每个线条的颜色
+      ctx.stroke()
+    }
+
+    // 4.采用遍历的方式，绘画y轴的线条
+    var yLineTotals = 30 * 30 // 计算需要绘画y轴的条数
+    for (var j = 0; j < yLineTotals; j++) {
+      ctx.beginPath() // 开启路径，设置不同的样式
+      ctx.moveTo(girdSize * j, 0)
+      ctx.lineTo(girdSize * j, CanvasHeight)
+      ctx.strokeStyle = "#ccc" // 设置每个线条的颜色
+      ctx.stroke()
+    }
+  </script>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "web3_dapp",
+  "version": "1.0.0",
+  "description": "* Run the development console",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoai7904/web3_dapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.5.0",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}

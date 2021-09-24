@@ -1,0 +1,1112 @@
+.home {
+  &-banner {
+    width: 100%;
+    height: 720px;
+    background: url('../../assets/images/index_banner_b.png') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding-top: 60px;
+  }
+  &-sea {
+    width: 100%;
+    max-width: 485px;
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &-subheader {
+    width: 100%;
+    max-width: 425px;
+    position: absolute;
+    top: 395px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .line-container.right {
+      flex-direction: row-reverse;
+    }
+    .text {
+      color: #56fae1;
+      text-transform: uppercase;
+      font-weight: 600;
+      white-space: nowrap;
+      margin: 0 12px;
+    }
+  }
+  &-game-play {
+    width: 100%;
+    background-color: #000;
+    padding: 140px 30px;
+  }
+  &-game-box {
+    width: 100%;
+    height: 100%;
+    // background: url('../../assets/images/bg_border.png') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 40px 90px 40px 120px;
+    max-width: 1600px;
+    margin: 0 auto;
+    border: 3px solid #0099cc;
+    border-radius: 30px;
+    .title {
+      color: #0099cc;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      text-align: center;
+      min-height: 70px;
+    }
+    .description {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.0425em;
+      color: #fff;
+      padding: 20px 0;
+      min-height: 200px;
+    }
+  }
+  &-game-memo {
+    height: 108px;
+    border-radius: 30px;
+    background-color: #14262f;
+    position: absolute;
+    top: -35px;
+    right: 200px;
+    padding: 10px;
+    &-out {
+      border-radius: 30px;
+      background-color: #1f676e;
+      height: 100%;
+      width: 100%;
+      padding: 10px 40px;
+    }
+  }
+  &-game-col {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  &-game-line {
+    width: 70px;
+    margin-right: 10px;
+    .dot1 {
+      background-color: #fff;
+      flex: 4px 0 0;
+      height: 4px;
+      border-radius: 4px;
+    }
+    .dot2 {
+      background-color: #fff;
+      flex: 15px 0 0;
+      height: 4px;
+      border-radius: 4px;
+      margin: 0 5px;
+    }
+    .line {
+      background-color: #fff;
+      flex: 50px 0 0;
+      height: 4px;
+      border-radius: 4px;
+    }
+  }
+  &-game-text {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &-game-max-text {
+    font-size: 30px;
+  }
+  &-game-list {
+    .icon {
+      width: 188px;
+    }
+    .split-line {
+      width: 100%;
+      height: 4px;
+      border-radius: 10px;
+      background-color: #00445d;
+      margin-bottom: 40px;
+    }
+    .ant-row {
+      margin-bottom: 27px;
+    }
+    .home-game-col-actived {
+      display: none;
+      position: absolute;
+      top: -97px;
+      left: 0;
+      min-height: 720px;
+      background: #0099cc;
+      border-radius: 10px;
+      .title {
+        color: #fff;
+        background: #0099cc;
+        padding: 70px 30px 30px 30px;
+        border-radius: 10px 10px 0 0;
+        margin: 0;
+        width: 100%;
+      }
+      .description {
+        background: #0099cc;
+        padding: 30px 30px 70px 30px;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+      }
+      .icon-wrap {
+        background: #00cef2;
+        padding: 40px 30px;
+        width: 100%;
+      }
+    }
+  }
+  .home-game-mini {
+    display: none;
+  }
+  .home-game-bottom-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    width: 425px;
+  }
+  .arrow-content {
+    width: 100%;
+    height: 50px;
+    background-color: #0099cc;
+    .arrow {
+      position: relative;
+      display: inline-block;
+      padding: 10px;
+      border: solid #fff;
+      border-width: 0 6px 6px 0;
+      border-radius: 2px;
+      margin-top: 52px;
+      left: 50%;
+      transform: rotate(45deg) translateX(-100%);
+      cursor: pointer;
+      animation: upAndDownArrow 1s infinite cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+  }
+  .home-video {
+    background-color: #000;
+    width: 100%;
+    &-bg {
+      background: url('../../assets/images/home_bg1.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &-cover {
+      padding: 147px 0 80px 0;
+      // background-color: rgba(21, 56, 85, 0.86);
+    }
+    &-content {
+      max-width: 1600px;
+      margin: 0 auto;
+      //   min-height: 812px;
+    }
+    &-play {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-height: 407px;
+      cursor: pointer;
+      border: 10px solid #fff;
+      .video-content {
+        background: url('../../assets/images/video_img.png') no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+      }
+      .video-btn {
+        background: url('../../assets/images/video_bf_icon.png') no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: calc(100px / 1.5);
+        height: calc(100px / 1.5);
+        top: calc(50% - (calc(100px / 1.5) / 2));
+        left: calc(50% - (calc(100px / 1.5) / 2));
+        pointer-events: none;
+        transition: transform 0.25s;
+        transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        z-index: 101;
+      }
+      .video-js {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+    &-play:hover .video-btn {
+      transform: scale(1.3);
+    }
+    &-des {
+      .des-title {
+        color: #fff;
+        // font-family: Titles;
+        font-size: 44px;
+        font-style: italic;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      .des-p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+    .des-footer {
+      &-btn {
+        margin: 20px 0;
+        color: #51cbff;
+        font-weight: 600;
+        text-transform: uppercase;
+        .title {
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        svg {
+          width: 30px;
+          path {
+            fill: #51cbff;
+          }
+        }
+      }
+      .ant-btn {
+        font-size: 16px;
+        color: #212c72;
+      }
+      .ant-btn:hover {
+        background-color: #0099cc;
+        border-color: #0099cc;
+        color: #fff;
+        cursor: pointer;
+      }
+      .home-video-buy2 {
+        display: none;
+      }
+      .dot1,
+      .dot2,
+      .line {
+        background-color: #1d29a0;
+      }
+    }
+    .des-footer-mini {
+      .line-container {
+        display: none;
+      }
+    }
+  }
+
+  .home-land-introduce {
+    background-color: #000;
+    width: 100%;
+    &-content {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 90px 30px 40px 30px;
+    }
+    .home-land-introduce-left {
+      color: #fff;
+      font-size: 15px;
+      .subtitle {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.0625em;
+      }
+      .title {
+        font-family: Titles;
+        white-space: nowrap;
+        color: #fff;
+        font-size: 44px;
+        margin-bottom: 20px;
+      }
+      .description {
+        font-weight: 600;
+        letter-spacing: 0.0425em;
+        margin-top: 25px;
+        margin-bottom: 45px;
+        line-height: 1.5;
+        color: #fff;
+        font-size: 18px;
+      }
+      .land-row {
+        margin-top: 27px;
+        .land-item {
+          flex-direction: column;
+          cursor: pointer;
+          background-color: #333;
+          margin-right: 5px;
+          padding: 15px 0;
+          img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+          }
+          span {
+            color: #fff;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .home-land-introduce-right {
+      width: 100%;
+      max-width: 450px;
+    }
+    .more-info {
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: #56fae1;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 28px;
+      letter-spacing: 0.0425em;
+      text-transform: uppercase;
+    }
+    .more-info:before {
+      content: '';
+      background: url('../../assets/svg/perks.svg') no-repeat 0 0;
+      background-size: contain;
+      display: inline-block;
+      position: relative;
+      margin-right: 8px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .home-land-price {
+    width: 100%;
+    background-color: #000;
+    &-content {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 120px 30px 50px 30px;
+      .land-price-bg {
+        width: 100%;
+        // background: url('../../assets/images/index_overlay.png') no-repeat;
+        // background-size: 100% 100%;
+        background-image: linear-gradient(#000, #004258);
+        border: 4px solid #0099cc;
+        border-radius: 20px;
+        position: relative;
+        padding: 50px 35px 20px 35px;
+      }
+      .land-price-title {
+        width: 50%;
+        color: #fff;
+        margin-bottom: 15px;
+        .title {
+          font-family: Titles;
+          font-size: 32px;
+          margin-bottom: 0;
+          color: inherit;
+        }
+        .subtitle {
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+        .highlight {
+          color: #56fae1;
+        }
+      }
+      .land-price-icon {
+        width: 100%;
+        max-width: 180px;
+        position: absolute;
+        top: -85px;
+        right: 0;
+      }
+      .land-price-list {
+        background-color: #fff;
+        border: 4px solid #56fae1;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 15px;
+        .land-price-list-icon {
+          width: 100%;
+          max-width: 75px;
+        }
+        .land-price-item {
+          span {
+            font-weight: 500;
+          }
+          .del {
+            color: gray;
+            text-decoration: line-through;
+          }
+          .land-price-list-info3 {
+            span {
+              color: #8ba3c5;
+            }
+          }
+          .land-price-list-info4 {
+            span {
+              color: #395176;
+            }
+          }
+        }
+        .land-price-item-1 {
+          .land-price-list-info1 {
+            span {
+              color: #006073;
+            }
+          }
+          .land-price-list-info2 {
+            span {
+              color: #01ad8b;
+            }
+          }
+        }
+
+        .land-price-item-2 {
+          .land-price-list-info1 {
+            span {
+              color: #0053ee;
+            }
+          }
+          .land-price-list-info2 {
+            span {
+              color: #075cbb;
+            }
+          }
+        }
+
+        .land-price-item-3 {
+          .land-price-list-info1 {
+            span {
+              color: #341596;
+            }
+          }
+          .land-price-list-info2 {
+            span {
+              color: #8957db;
+            }
+          }
+        }
+
+        .land-price-item-4 {
+          .land-price-list-info1 {
+            span {
+              color: #ae0023;
+            }
+          }
+          .land-price-list-info2 {
+            span {
+              color: #de2b5d;
+            }
+          }
+        }
+
+        .land-price-list-line {
+          width: 100%;
+          height: 5px;
+          background-color: #8ea6c7;
+          border-radius: 5px;
+          margin: 5px 0;
+        }
+      }
+      .home-land-price-right {
+        .title {
+          font-size: 44px;
+          font-family: Titles;
+          color: #fff;
+        }
+        .time {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 22px;
+          color: #56fae1;
+          white-space: nowrap;
+        }
+        .des {
+          font-weight: 600;
+          letter-spacing: 0.0425em;
+          text-align: justify;
+          text-align-last: left;
+          color: #fff;
+          margin: 0 0 60px 0;
+          font-size: 18px;
+        }
+        .land-price-map {
+          width: 100%;
+          max-width: 120px;
+        }
+        .line-container {
+          margin-left: 20px;
+          .line,
+          .dot1,
+          .dot2 {
+            background-color: #0082d0;
+          }
+          .special-left {
+            border: 4px solid #0082d0;
+          }
+        }
+        .split-line {
+          height: 5px;
+          background-color: #00144f;
+          margin: 40px 0;
+        }
+      }
+      .home-land-price-row {
+        margin-top: 90px;
+      }
+      .sign-up-box {
+        width: 100%;
+        height: 64px;
+        background-color: #00144f;
+        border-radius: 10px;
+        margin-top: 24px;
+        padding: 0 24px;
+        .icon {
+          position: relative;
+          background-size: contain;
+          width: 44px;
+          height: 44px;
+          transition: transform 0.2s;
+          cursor: pointer;
+          svg {
+            width: 44px;
+            height: 44px;
+            path {
+              fill: #185876;
+              fill-rule: evenodd;
+            }
+          }
+        }
+        .icon:hover svg path {
+          fill: #fff !important;
+        }
+        .texts {
+          text-align: right;
+          .title {
+            font-size: 24px;
+            font-style: italic;
+            color: #91d4ff;
+            font-family: Titles;
+          }
+          .register {
+            position: relative;
+            font-weight: 600;
+            color: #49e0ff;
+            text-transform: uppercase;
+            transition: 0.2s;
+            cursor: pointer;
+            a:hover {
+              color: #fff;
+              margin-right: 16px;
+            }
+            svg {
+              position: absolute;
+              margin-left: 4px;
+              top: 0;
+              width: 16px;
+              height: 16px;
+              opacity: 0;
+              transition: 0.2s;
+            }
+          }
+          .register:hover {
+            color: #fff;
+            margin-right: 16px;
+          }
+          .register:hover svg {
+            opacity: 1;
+          }
+        }
+      }
+      .buy-land-container {
+        .remaining-time {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 26px;
+          text-transform: uppercase;
+          font-style: italic;
+          color: #fff;
+          margin-left: 20px;
+        }
+        .countdown {
+          color: #ffff8f;
+        }
+      }
+      .buy-land-container-mini {
+        display: none;
+      }
+      .buy-btn {
+        padding: 10px;
+        cursor: pointer;
+        border: 4px solid #fff;
+        background-color: #00b0c4;
+        color: #fff;
+        position: relative;
+        font-size: 24px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        transition: 0.2s;
+        text-align: center;
+        font-family: Titles;
+      }
+      .buy-btn::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: 4px solid #0f1a2b;
+        padding: 0 20px;
+      }
+      .buy-btn:hover {
+        background-color: #fff;
+        color: #00b0c4;
+      }
+    }
+    &-title {
+      flex: 1;
+      margin-left: 25px;
+    }
+  }
+  .home-footer-bg {
+    background: #000 url('../../assets/svg/mountains.svg') no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .home-question {
+    width: 100%;
+    background-color: #0e6ca1;
+    padding: 20px 30px;
+    &-title {
+      font-family: Titles;
+      color: #fff;
+      font-size: 50px;
+    }
+    &-subtitle {
+      color: #1f83bc;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .home-question-list {
+      margin: 0;
+      padding: 0;
+      .home-question-item {
+        padding: 20px 10px;
+        position: relative;
+        border-bottom: 4px solid #0e6ca1;
+        cursor: pointer;
+        .home-question-label {
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 28px;
+          letter-spacing: 0.0425em;
+          text-transform: uppercase;
+          cursor: pointer;
+          color: #fff;
+        }
+        .home-question-arrow {
+          width: 20px;
+        }
+      }
+      .active {
+        background: #0e6ca1;
+        border-bottom-width: 0;
+      }
+    }
+    .home-question-left {
+      margin-top: 70px;
+    }
+    .home-question-collapse {
+      background-color: #0e6ca1;
+      .ant-collapse-item-active {
+        border-bottom: 0 !important;
+        .ant-collapse-header {
+          background-color: #0e6ca1;
+        }
+      }
+      .ant-collapse-item {
+        margin-bottom: 10px;
+        svg {
+          font-size: 18px;
+        }
+      }
+      .ant-collapse-header {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        padding: 22px 10px;
+      }
+      .ant-collapse-content-box {
+        background-color: #1f83bc;
+        border-radius: 2px;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 20px;
+        text-transform: uppercase;
+      }
+    }
+    .home-question-collapse.ant-collapse > .ant-collapse-item {
+      border-bottom: 4px solid #1f83bc;
+    }
+  }
+
+  .cls-1 {
+    fill: #fff;
+    fill-rule: evenodd;
+  }
+}
+
+@keyframes upAndDownArrow {
+  0% {
+    bottom: 12px;
+  }
+  50% {
+    bottom: 7px;
+  }
+  100% {
+    bottom: 12px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .home {
+    .home-game-bottom-icon {
+      display: none;
+    }
+    .home-video-content {
+      padding: 0 10px;
+    }
+    .home-video {
+      .home-video-des {
+        padding: 0 35px;
+      }
+    }
+    .home-game-list {
+      .description {
+        min-height: 250px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home {
+    .home-game-col-actived {
+      display: none !important;
+    }
+    .home-game-list {
+      .title {
+        min-height: 150px !important;
+      }
+      .description {
+        min-height: 330px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .home {
+    .home-game-play {
+      padding: 50px 10px;
+    }
+    .home-game-box {
+      background: none;
+      padding: 0;
+      border: 0;
+      .home-game-list {
+        display: none;
+      }
+      .home-game-mini {
+        display: block;
+        .title {
+          padding: 0;
+          color: #0099cc;
+          text-align: left;
+          font-size: calc(14px + 24 * ((100vw - 375px) / 1600));
+          min-height: initial;
+          margin: 0;
+        }
+        .description {
+          min-height: initial;
+          font-size: calc(12px + 24 * ((100vw - 375px) / 1600));
+          padding: 10px 0;
+          margin: 0;
+        }
+        .icon {
+          width: 80px;
+          margin-right: 30px;
+        }
+        .home-game-mini-item {
+          padding: 15px 10px;
+          border-left: 4px solid transparent;
+        }
+        .home-game-mini-item-actived {
+          background-color: #002a33;
+          border-left: 4px solid #0099cc;
+        }
+      }
+    }
+    .home-game-list-col {
+      text-align: center;
+      .icon {
+        width: 150px;
+      }
+      .title {
+        margin: 20px 0;
+      }
+    }
+    .home-video {
+      .home-video-des {
+        padding: 0 !important;
+        margin-top: 20px;
+      }
+      .des-footer-mini {
+        flex-direction: column;
+        .line-container {
+          display: flex !important;
+          margin: 20px 0;
+          .dot1,
+          .dot2,
+          .line {
+            background-color: #456180;
+          }
+        }
+      }
+      .home-video-play {
+        height: calc((100vw * 407) / 702);
+        min-height: calc((100vw * 407) / 702);
+      }
+    }
+    .home-land-price {
+      .home-land-price-content {
+        padding: 50px 10px;
+        .home-land-price-row {
+          width: 100%;
+          margin: 0 !important;
+          .ant-col {
+            padding: 0 10px !important;
+          }
+        }
+        .land-price-item {
+          span {
+            font-size: calc(12px + 24 * ((100vw - 375px) / 1600));
+          }
+        }
+        .home-land-price-right {
+          padding-left: 0 !important;
+          .home-land-price-title {
+            margin-left: 0 !important;
+          }
+        }
+        .buy-land-container {
+          flex-direction: column !important;
+          justify-content: center;
+          align-items: center;
+          .remaining-time {
+            text-align: center;
+            margin: 20px 0 10px 0;
+          }
+        }
+        .buy-land-container-pc {
+          display: none;
+        }
+        .buy-land-container-mini {
+          display: block;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .home {
+    .land-price-map {
+      display: none;
+    }
+
+    .home-land-introduce {
+      .home-land-introduce-content {
+        padding: 40px 20px;
+      }
+      .home-land-introduce-left {
+        .land-row {
+          .land-item {
+            margin-bottom: 5px;
+            img {
+              width: 80%;
+              height: 80%;
+              max-width: 100px;
+              max-height: 100px;
+            }
+          }
+        }
+        .title {
+          font-size: calc(34px + 24 * ((100vw - 375px) / 1600));
+        }
+        .description {
+          font-size: calc(14px + 24 * ((100vw - 375px) / 1600));
+        }
+      }
+    }
+
+    .home-video {
+      .home-video-cover {
+        padding: 50px 0;
+      }
+      .home-video-des {
+        padding: 0 !important;
+        margin-top: 20px;
+      }
+      .home-video-play {
+        height: calc((100vw * 407) / 702);
+        min-height: calc((100vw * 407) / 702);
+      }
+      .home-video-bg {
+        background-image: none;
+        background-color: rgba(21, 56, 85, 0.86);
+        // padding: 20px 20px 60px 20px;
+      }
+      .home-video-row {
+        width: 100%;
+      }
+      .home-video-content {
+        .des-title {
+          font-size: calc(34px + 24 * ((100vw - 375px) / 1600));
+        }
+        .des-p {
+          font-size: calc(14px + 24 * ((100vw - 375px) / 1600));
+        }
+        .des-footer-btn {
+          justify-content: center;
+        }
+        .line-container1 {
+          display: none;
+        }
+        .home-video-buy1 {
+          display: none;
+        }
+        .home-video-buy2 {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+          .ant-btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .home-land-price {
+      .home-land-price-content {
+        padding: 50px 10px;
+        .home-land-price-row {
+          width: 100%;
+          margin: 0 !important;
+          .ant-col {
+            padding: 0 10px !important;
+          }
+        }
+        .land-price-item {
+          span {
+            font-size: calc(12px + 24 * ((100vw - 375px) / 1600));
+          }
+        }
+        .home-land-price-right {
+          padding-left: 0 !important;
+          .home-land-price-title {
+            margin-left: 0 !important;
+          }
+        }
+        .buy-land-container {
+          flex-direction: column !important;
+          justify-content: center;
+          align-items: center;
+          .remaining-time {
+            text-align: center;
+            margin: 20px 0 10px 0;
+          }
+        }
+        .buy-land-container-pc {
+          display: none;
+        }
+        .buy-land-container-mini {
+          display: block;
+          margin-top: 30px;
+        }
+      }
+      .land-price-icon {
+        top: -65px;
+        width: calc(120px + 24 * ((100vw - 375px) / 1600));
+      }
+      .land-price-bg {
+        padding: 20px 30px;
+        .ant-col-4 {
+          padding: 0 !important;
+        }
+      }
+      .land-price-title {
+        width: 60%;
+        .title {
+          font-size: calc(30px + 24 * ((100vw - 375px) / 1600));
+        }
+      }
+      .home-land-price-right {
+        margin-bottom: 30px;
+        .sign-up-box {
+          height: 100%;
+          flex-direction: column !important;
+          padding: 20px;
+        }
+        .title {
+          font-size: calc(34px + 24 * ((100vw - 375px) / 1600));
+          margin-bottom: 10px;
+        }
+        .time,
+        .des {
+          font-size: calc(14px + 8 * ((100vw - 375px) / 1600));
+        }
+      }
+    }
+
+    .home-question {
+      &-title {
+        font-size: calc(21.75px + 28.25 * ((100vw - 375px) / 1600));
+      }
+      &-subtitle {
+        font-size: calc(10px + 6 * ((100vw - 375px) / 1600));
+      }
+      &-item {
+        padding: 10px !important;
+      }
+      .ant-collapse-header {
+        padding: 10px !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+  }
+}

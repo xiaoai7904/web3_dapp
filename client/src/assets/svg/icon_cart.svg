@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="35" viewBox="0 0 54 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_cart" class="cls-1" d="M47,28H16L7,8H4A4,4,0,0,1,4,0H14L24,21H40l3-11H26L23,2H51l2,2ZM22,35a4,4,0,0,1-4-4h8A4,4,0,0,1,22,35Zm18,0a4,4,0,0,1-4-4h8A4,4,0,0,1,40,35Z"/>
+</svg>
